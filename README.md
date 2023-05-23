@@ -4,6 +4,7 @@ MedCodeProx is an opensource Medical Coding Training platform based on PHP Larav
 # Features
 Features of MedCodeProx are as follows:
 - User Management
+- Customer Management
 - ICD10 Code and Order Management
 - HCPCS Code and Order Management
 - CPT Code and Order Management
