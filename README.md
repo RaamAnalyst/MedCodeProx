@@ -1,8 +1,8 @@
-# MedCodePro
-MedCodePro is an opensource Medical Coding Training platform based on PHP Laravel. It enables admin to update ICD, CPT, HCPCS codes and offers users to explore and lookup codes with respective short and long descriptions. 
+# MedCodeProx
+MedCodeProx is an opensource Medical Coding Training platform based on PHP Laravel. It enables admin to update ICD, CPT, HCPCS codes and offers users to explore and lookup codes with respective short and long descriptions. 
 
 # Features
-Features of MedCodePro are as follows:
+Features of MedCodeProx are as follows:
 - User Management
 - ICD10 Code and Order Management
 - HCPCS Code and Order Management
@@ -15,9 +15,9 @@ Features of MedCodePro are as follows:
 - MySQL
 
 # Installation
-To install MedCodePro in your server, follow the below steps:
+To install MedCodeProx in your server, follow the below steps:
 
-1. Clone the repository with **git clone** / Download and extract the files from the repository **MedCodePro**
+1. Clone the repository with **git clone** / Download and extract the files from the repository **MedCodeProx**
 2. Copy *.env.example file* to *.env*
 3. Edit the *.env* file with the details such as app url, app name, database credentials, mail, and other credentials wherever needed.
 4. Run **composer install** or **php composer.phar install**
