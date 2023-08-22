@@ -11,9 +11,22 @@ Features of MedCodeProx are as follows:
 
 # Requirements
 - PHP >= 7.4
+    ```
+    sudo apt-get install php
+    sudo apt-get install php7.4-dom
+    sudo apt-get install php7.0-curl
+    sudo apt-get install php7.4-mysql
+    ```
 - Composer >= 1.0
-- Laravel >= 8.0
+    ```
+    php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    php -r "if (hash_file('sha384', 'composer-setup.php') === 'e21205b207c3ff031906575712edab6f13eb0b361f2085f1f1237b7126d785e826a450292b6cfd1d64d92e6563bbde02') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+    php composer-setup.php
+    php -r "unlink('composer-setup.php');"
+    ```
+- Laravel >= 8.0 (Would be installed when running composer install)
 - MySQL
+    - `sudo apt install mysql-server` (no deafult password so keep it blank in the env)
 
 # Installation
 To install MedCodeProx in your server, follow the below steps:
@@ -28,6 +41,7 @@ To install MedCodeProx in your server, follow the below steps:
 8. Run **php artisan migrate --seed**
 *Note: Seed is mandatory as it will create the first admin user.*
 9. For file or image attachments, run **php artisan storage:link** command
+    1. if you facing permssion issue then change `DB_HOST` to `localhost`.
 10. Start php server with the **php artisan serve** command
 11. Launch the main **URL**.
 12. To log in to adminpanel, go to **/login** URL and log in with credentials
